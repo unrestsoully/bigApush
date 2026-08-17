@@ -8,6 +8,8 @@ on:
 jobs:
   run-selection:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
